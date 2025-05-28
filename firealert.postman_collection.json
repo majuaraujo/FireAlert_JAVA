@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "e6a7f55c-890f-4b2a-baeb-5bec7ebe4e4f",
+		"name": "localhost:8080",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45386384",
+		"_collection_link": "https://maju-9349450.postman.co/workspace/Maju's-Workspace~a684e120-3ec6-48a2-8d3d-af594d9fbb6b/collection/45386384-e6a7f55c-890f-4b2a-baeb-5bec7ebe4e4f?action=share&source=collection_link&creator=45386384"
+	},
+	"item": [
+		{
+			"name": "/api/ocorrencias",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataAtendimento\": \"2025-05-28T18:30:00\",\r\n  \"observacoes\": \"Área isolada, fogo contido com apoio aéreo\",\r\n  \"alerta\": {\r\n    \"id\": 1\r\n  },\r\n  \"agente\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ocorrencias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ocorrencias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/agentes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Carlos Silva\",\r\n  \"matricula\": \"AGT123\",\r\n  \"contato\": \"carlos.silva@email.com\",\r\n  \"areaAtuacao\": \"Zona Oeste\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/agentes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"agentes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/alertas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mensagem\": \"Foco crítico detectado próximo à rodovia\",\r\n  \"status\": \"ativo\",\r\n  \"dataEmissao\": \"2025-05-28T17:10:00\",\r\n  \"pontoDeFoco\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/alertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alertas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/focos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataHora\": \"2025-05-28T16:30:00\",\r\n  \"intensidade\": 4.8,\r\n  \"latitude\": \"-23.5500\",\r\n  \"longitude\": \"-46.6300\",\r\n  \"sensor\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/focos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"focos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/sensores",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipo\": \"fumaça\",\r\n  \"latitude\": \"-23.5505\",\r\n  \"longitude\": \"-46.6333\",\r\n  \"ativo\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/sensores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sensores"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
